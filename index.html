@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <style>
+        .Calculatrice_body {
+            position: absolute;
+            border: 1px black solid;
+            width: 25%;
+            height: 50%;
+            top: 25%;
+            left: 37.5%;
+            background-color: #1C1C1C;
+        }
+
+        #entete {
+            color: white;
+            font-size: 80%;
+            text-align: center;
+        }
+
+        #resultat {
+            border: 1px solid #1C1C1C;
+            font-size: 150%;
+            color: white;
+            border: #1C1C1C;
+            height: 50px;
+            padding-left: 0;
+            padding-right: 0;
+
+
+        }
+
+        #les_numeros {
+            float: left;
+            font-size: 150%;
+            margin-left: 10%;
+            margin-right: 5%;
+
+        }
+
+        #les_operations {
+            float: left;
+            width: 50%;
+        }
+
+        #les_numeros table tr td button:active {
+            background-color: #c7c7c7;
+            border: #c7c7c7;
+            border-radius: 100%;
+            font-size: 50%;
+
+        }
+
+        #les_numeros table tr td button:hover {
+            background-color: #c7c7c7;
+            border: #c7c7c7;
+            border-radius: 100% 100% 100% 100%;
+            font-size: 150%;
+
+        }
+
+        #les_numeros table tr td button {
+            background-color: #505050;
+            border: #505050;
+            border-radius: 100% 100% 100% 100%;
+            font-size: 150%;
+
+        }
+
+        #les_operations table tr td button {
+            background-color: #FF9500;
+            border: #FF9500;
+            border-radius: 100%;
+            font-size: 250%;
+        }
+
+        #les_operations table tr td button:hover {
+            background-color: #f7ac43;
+            border: #f7ac43;
+            border-radius: 100%;
+            font-size: 250%;
+        }
+
+        #les_operations table tr td button:active {
+            background-color: #f7ac43;
+            border: #f7ac43;
+            border-radius: 100%;
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Calculatrice_body">
+        <div id="entete">
+            Calculatrice:01
+        </div>
+        <div id="resultat">
+            <p></p>
+        </div>
+        <div id="les_numeros">
+            <table>
+                <tr>
+                    <td><button id="7">7</button></td>
+                    <td><button id="8">8</button></td>
+                    <td><button id="9">9</button></td>
+                </tr>
+                <tr>
+                    <td><button id="4">4</button></td>
+                    <td><button id="5">5</button></td>
+                    <td><button id="6">6</button></td>
+                </tr>
+                <tr>
+                    <td><button id="1">1</button></td>
+                    <td><button id="2">2</button></td>
+                    <td><button id="3">3</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="0">0 </button></td>
+                    <td>
+                        <button id=".">.</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="les_operations">
+            <table>
+                <tr>
+                    <td><button id="ce">CE</button></td>
+                    <td><button id="C">C</button></td>
+                </tr>
+                <tr>
+                    <td><button id="/">/</button></td>
+                    <td><button id="*">×</button></td>
+                </tr>
+                <tr>
+                    <td><button id="-">-</button></td>
+                    <td rowspan="2"><button id="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="=">=</button></td>
+
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="calculatrice.js"></script>
+</body>
+
+</html>
